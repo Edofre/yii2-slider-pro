@@ -12,6 +12,8 @@ class SliderPro extends \yii\jui\Widget
 	public $id = 'slider-pro';
 	/** @var array */
 	public $sliderOptions = [];
+	/** @var array */
+	public $items = [];
 
 	/**
 	 * @throws \yii\base\InvalidConfigException
@@ -19,6 +21,15 @@ class SliderPro extends \yii\jui\Widget
 	public function init()
 	{
 		parent::init();
+
+		if (empty($id)) {
+			throw new \yii\base\InvalidConfigException('An ID has to be set for the slider to be instantiated');
+		}
+
+		if (empty($items)) {
+			throw new \yii\base\InvalidConfigException('Items have to be added for the slider to work');
+		}
+
 		$this->registerToView();
 	}
 
