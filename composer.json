@@ -5,7 +5,7 @@
     "php": ">=5.5.0",
     "yiisoft/yii2": "*",
     "yiisoft/yii2-jui": "*",
-    "slider-pro/slider-pro": "*"
+    "bower-asset/slider-pro": "*"
   },
   "keywords": [
     "slider-pro",
