@@ -13,7 +13,9 @@ class SliderPro extends \yii\jui\Widget
 	/** @var array */
 	public $sliderOptions = [];
 	/** @var array */
-	public $items = [];
+	public $slides = [];
+	/** @var array */
+	public $thumbnails = [];
 
 	/**
 	 * @throws \yii\base\InvalidConfigException
@@ -22,8 +24,8 @@ class SliderPro extends \yii\jui\Widget
 	{
 		parent::init();
 
-		if (empty($this->id) || empty($this->items)) {
-			throw new \yii\base\InvalidConfigException('The id and items options are required and cannot be empty.');
+		if (empty($this->id)) {
+			throw new \yii\base\InvalidConfigException('The id is required and cannot be empty.');
 		}
 
 		$this->registerToView();
@@ -51,6 +53,12 @@ class SliderPro extends \yii\jui\Widget
 	 */
 	public function run()
 	{
-		// Forest run
+		if (!empty($this->slides)) {
+			return $this->render('slider', [
+				'id'         => $this->id,
+				'slides'     => $this->slides,
+				'thumbnails' => $this->thumbnails,
+			]);
+		}
 	}
 }
