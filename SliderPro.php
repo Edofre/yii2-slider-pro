@@ -4,9 +4,9 @@ namespace edofre\sliderpro;
 
 /**
  * Class SliderPro
- * @package edofre\ckeditor
+ * @package edofre\sliderpro
  */
-class SliderPro extends \yii\widgets\Widget
+class SliderPro extends \yii\jui\Widget
 {
 	/** @var */
 	public $id = 'slider-pro';

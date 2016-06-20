@@ -7,13 +7,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 To install, either run
 
 ```
-$ php composer.phar require edofre/yii2-slider-pro "@dev"
+$ php composer.phar require edofre/yii2-slider-pro "@dev-master"
 ```
 
 or add
 
 ```
-"edofre/yii2-slider-pro": "@dev"
+"edofre/yii2-slider-pro": "@dev-master"
 ```
 
 to the ```require``` section of your `composer.json` file.
@@ -21,7 +21,7 @@ to the ```require``` section of your `composer.json` file.
 ## Usage
 
 ```php
-<?= \edofre\SliderPro::widget([
+<?= \edofre\sliderpro\SliderPro::widget([
         'id' 			=> 'slider-pro',
         'sliderOptions'	=> [
         	'width'		=> 960,
