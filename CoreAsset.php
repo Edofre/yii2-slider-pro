@@ -9,7 +9,7 @@ namespace edofre\sliderpro;
 class CoreAsset extends \yii\web\AssetBundle
 {
 	/** @var string */
-	public $sourcePath = '@bower/slider-pro/slider-pro';
+	public $sourcePath = '@bower/slider-pro/';
 	/** @var array */
 	public $js = [
 		'dist/js/jquery.sliderPro.js',
