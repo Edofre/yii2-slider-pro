@@ -20,7 +20,7 @@ to the ```require``` section of your `composer.json` file.
 
 ## Disclaimer
 
-Still in development, in future items will have to be added using an array and the html generation will be handled by the widget itse.f
+Still in development, in future items will have to be added using an array and the html generation will be handled by the widget itself
 
 ## Usage
 
@@ -48,6 +48,7 @@ Still in development, in future items will have to be added using an array and t
 
 <?= \edofre\sliderpro\SliderPro::widget([
         'id' 			=> 'my-slider',
+        'items' 		=> $items,
         'sliderOptions'	=> [
         	'width'		=> 960,
 			'height'	=> 500,

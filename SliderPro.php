@@ -22,12 +22,8 @@ class SliderPro extends \yii\jui\Widget
 	{
 		parent::init();
 
-		if (empty($id)) {
-			throw new \yii\base\InvalidConfigException('An ID has to be set for the slider to be instantiated');
-		}
-
-		if (empty($items)) {
-			throw new \yii\base\InvalidConfigException('Items have to be added for the slider to work');
+		if (empty($this->id) || empty($this->items)) {
+			throw new \yii\base\InvalidConfigException('The id and items options are required and cannot be empty.');
 		}
 
 		$this->registerToView();
