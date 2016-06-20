@@ -28,13 +28,12 @@ class SliderPro extends \yii\jui\Widget
 	private function registerToView()
 	{
 		$view = $this->getView();
-		$id = \yii\helpers\Json::encode($this->id);
 		$slider_options = \yii\helpers\Json::encode($this->sliderOptions);
 
 		// Register the slider to the view
 		$view->registerJs("
 			jQuery(document).ready(function($) {
-        		$('#{$id}').sliderPro({$slider_options});
+        		$('#{$this->id}').sliderPro({$slider_options});
     		});
 		");
 		CoreAsset::register($view);
