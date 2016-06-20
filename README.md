@@ -18,7 +18,9 @@ or add
 
 to the ```require``` section of your `composer.json` file.
 
-## Usage
+## Usage 
+
+### You can use either the supplied php classes to generate the HTML
 
 ```php
 use edofre\sliderpro\models\slides\Caption;
@@ -85,8 +87,9 @@ $thumbnails = [
 ?>
 ```
 
-```php
+### Or you can create your own html code to generate the slider
 
+```php
 <?= \edofre\sliderpro\SliderPro::widget([
 	'id'            => 'my-slider',
 	'sliderOptions' => [
