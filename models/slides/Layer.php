@@ -4,18 +4,18 @@ namespace edofre\sliderpro\models\slides;
 
 /**
  * Class Layer
- * @package edofre\fullcalendarscheduler\models\slides
+ * @package edofre\sliderpro\models\slides
  */
 class Layer extends \yii\base\Model
 {
 	/** Required class for the layers */
 	const LAYER_CLASS = 'sp-layer';
 
-	/** @var */
+	/** @var  string The tag (a, div, span etc) that will be rendered */
 	public $tag;
-	/** @var */
+	/** @var  string The contents of the tag */
 	public $content;
-	/** @var */
+	/** @var  array The HTML options for the layer */
 	public $htmlOptions;
 
 	/**

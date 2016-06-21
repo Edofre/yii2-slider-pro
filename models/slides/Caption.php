@@ -4,18 +4,18 @@ namespace edofre\sliderpro\models\slides;
 
 /**
  * Class Caption
- * @package edofre\fullcalendarscheduler\models\slides
+ * @package edofre\sliderpro\models\slides
  */
 class Caption extends \yii\base\Model
 {
 	/** Required class for the captions */
 	const CAPTION_CLASS = 'sp-caption';
 
-	/** @var */
+	/** @var  string The tag (a, div, span etc) that will be rendered */
 	public $tag;
-	/** @var */
+	/** @var  string The contents of the tag */
 	public $content;
-	/** @var */
+	/** @var  array The HTML options for the layer */
 	public $htmlOptions;
 
 	/**

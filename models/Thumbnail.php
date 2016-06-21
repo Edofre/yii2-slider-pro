@@ -4,7 +4,7 @@ namespace edofre\sliderpro\models;
 
 /**
  * Class Thumbnail
- * @package edofre\fullcalendarscheduler\models
+ * @package edofre\sliderpro\models
  */
 class Thumbnail extends \yii\base\Model
 {

@@ -4,12 +4,14 @@ namespace edofre\sliderpro\models;
 
 /**
  * Class Slide
- * @package edofre\fullcalendarscheduler\models
+ * @package edofre\sliderpro\models
  */
 class Slide extends \yii\base\Model
 {
-	/** @var */
-	public $items;
+	/** @var  string The string contents that will be rendered without any object interference */
+	public $content = '';
+	/** @var  array Contains objects from the /model folder, will be appended behind the $this->content string */
+	public $items = [];
 
 	/**
 	 * @return array
@@ -17,19 +19,21 @@ class Slide extends \yii\base\Model
 	public function rules()
 	{
 		return [
-			[['items'], 'safe'],
+			[['items', 'content'], 'safe'],
 		];
 	}
 
 	/**
+	 * Append the objects after the $this->content string
 	 * @return string
 	 */
 	public function render()
 	{
-		$items = '';
-		foreach ($this->items as $item) {
-			$items .= $item->render();
+		if (empty($items)) {
+			foreach ($this->items as $item) {
+				$this->content .= $item->render();
+			}
 		}
-		return $items;
+		return $this->content;
 	}
 }

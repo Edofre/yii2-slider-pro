@@ -20,26 +20,32 @@ to the ```require``` section of your `composer.json` file.
 
 ## Usage 
 
-### You can use either the supplied php classes to generate the HTML
+Not all available modules are available as objects, these will be implemented at a later date, 
+if you need exact/precise control please use the second method of creating the slider.
+
+The following 2 ways are available to instantiate the slider:
+
+### 1. You can use either the supplied php classes to generate the HTML
 
 ```php
+use edofre\sliderpro\models\Slide;
 use edofre\sliderpro\models\slides\Caption;
 use edofre\sliderpro\models\slides\Image;
 use edofre\sliderpro\models\slides\Layer;
 
 $slides = [
-	new \edofre\sliderpro\models\Slide([
+	new Slide([
 		'items' => [
 			new Image(['src' => '/images/test.jpg']),
 		],
 	]),
-	new \edofre\sliderpro\models\Slide([
+	new Slide([
 		'items' => [
 			new Image(['src' => '/images/test1.png']),
 			new Caption(['tag' => 'p', 'content' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.']),
 		],
 	]),
-	new \edofre\sliderpro\models\Slide([
+	new Slide([
 		'items' => [
 			new Image(['src' => '/images/test2.png']),
 			new Layer(['tag' => 'h3', 'content' => 'Lorem ipsum dolor sit amet', 'htmlOptions' => ['class' => 'sp-black', 'data-position' => "bottomLeft", 'data-horizontal' => "10%", 'data-show-transition' => "left", 'data-show-delay' => "300", 'data-hide-transition' => "right"]]),
@@ -47,12 +53,14 @@ $slides = [
 			new Layer(['tag' => 'div', 'content' => 'Static content', 'htmlOptions' => ['class' => 'sp-static']]),
 		],
 	]),
-	new \edofre\sliderpro\models\Slide([
-		'items' => [
-			new Layer(['tag' => 'p', 'content' => 'Lorem ipsum dolor sit amet']),
-		],
+	new Slide([
+		'content' =>
+			'<a class="sp-video" href="http://vimeo.com/109354891">
+				<img src="http://lorempixel.com/960/500/sports/5" width="500" height="300"/>
+			</a>'
+		,
 	]),
-	new \edofre\sliderpro\models\Slide([
+	new Slide([
 		'items' => [
 			new Layer(['tag' => 'h3', 'content' => 'Lorem ipsum dolor sit amet']),
 			new Layer(['tag' => 'p', 'content' => 'Consectetur adipisicing elit']),
@@ -64,7 +72,7 @@ $thumbnails = [
 	new \edofre\sliderpro\models\Thumbnail(['tag' => 'img', 'htmlOptions' => ['src' => "/images/ttest.jpg", 'data-src' => "/images/test.jpg"]]),
 	new \edofre\sliderpro\models\Thumbnail(['tag' => 'img', 'htmlOptions' => ['src' => "/images/ttest1.png", 'data-src' => "/images/test1.png"]]),
 	new \edofre\sliderpro\models\Thumbnail(['tag' => 'img', 'htmlOptions' => ['src' => "/images/ttest2.png", 'data-src' => "/images/test2.png"]]),
-	new \edofre\sliderpro\models\Thumbnail(['tag' => 'p', 'content' => 'Thumbnail 4']),
+	new \edofre\sliderpro\models\Thumbnail(['tag' => 'p', 'content' => 'Thumbnail for video']),
 	new \edofre\sliderpro\models\Thumbnail(['tag' => 'p', 'content' => 'Thumbnail 5']),
 ];
 ?>
@@ -87,7 +95,7 @@ $thumbnails = [
 ?>
 ```
 
-### Or you can create your own html code to generate the slider
+### 2. Or you can create your own HTML code to generate the slider
 
 ```php
 <?= \edofre\sliderpro\SliderPro::widget([
@@ -105,7 +113,7 @@ $thumbnails = [
 ]);
 ?>
 
-<div class="slider-pro" id="'my-slider'">
+<div class="slider-pro" id="my-slider">
 	<div class="sp-slides">
 		<!-- Slide 1 -->
 		<div class="sp-slide">

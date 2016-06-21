@@ -24,6 +24,7 @@ class SliderPro extends \yii\jui\Widget
 	{
 		parent::init();
 
+		// Make sure we have an id to bind the slider to
 		if (empty($this->id)) {
 			throw new \yii\base\InvalidConfigException('The id is required and cannot be empty.');
 		}
@@ -53,6 +54,7 @@ class SliderPro extends \yii\jui\Widget
 	 */
 	public function run()
 	{
+		// If we have slides we should probably render them
 		if (!empty($this->slides)) {
 			return $this->render('slider', [
 				'id'         => $this->id,

@@ -4,16 +4,16 @@ namespace edofre\sliderpro\models\slides;
 
 /**
  * Class Image
- * @package edofre\fullcalendarscheduler\models\slides
+ * @package edofre\sliderpro\models\slides
  */
 class Image extends \yii\base\Model
 {
 	/** Required class for the images */
 	const IMAGE_CLASS = 'sp-image';
 
-	/** @var */
+	/** @var  string The source of the image */
 	public $src;
-	/** @var */
+	/** @var  array The HTML options for the layer */
 	public $htmlOptions;
 
 	/**

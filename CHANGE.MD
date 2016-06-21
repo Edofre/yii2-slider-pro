@@ -1,6 +1,13 @@
 Change Log: `yii2-slider-pro`
 ===============================
 
+## Version 1.1.2
+
+**Date:** 21-Jun-2016
+
+- README.md update
+- Documentation update
+
 ## Version 1.1.1
 
 **Date:** 21-Jun-2016
