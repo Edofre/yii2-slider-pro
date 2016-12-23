@@ -28,7 +28,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "edofre\\sliderpor\\": "src"
+      "edofre\\sliderpro\\": "src"
     }
   },
   "extra": {
