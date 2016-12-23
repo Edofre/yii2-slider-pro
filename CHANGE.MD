@@ -1,5 +1,12 @@
 Change Log: `yii2-slider-pro`
-===============================
+=============================
+
+## Version 1.1.4
+
+**Date:** 23-Dec-2016
+
+- Formatting changes
+- src folder for package 
 
 ## Version 1.1.3
 
