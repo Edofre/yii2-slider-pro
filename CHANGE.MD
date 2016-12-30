@@ -1,6 +1,12 @@
 Change Log: `yii2-slider-pro`
 =============================
 
+## Version 1.1.5
+
+**Date:** 29-Dec-2016
+
+- Add yii2-bootstrap dependency 
+
 ## Version 1.1.4
 
 **Date:** 23-Dec-2016
