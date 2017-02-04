@@ -1,5 +1,11 @@
 # Yii2 slider-pro widget
 
+[![Latest Stable Version](https://poser.pugx.org/edofre/yii2-slider-pro/v/stable)](https://packagist.org/packages/edofre/yii2-slider-pro)
+[![Total Downloads](https://poser.pugx.org/edofre/yii2-slider-pro/downloads)](https://packagist.org/packages/edofre/yii2-slider-pro)
+[![Latest Unstable Version](https://poser.pugx.org/edofre/yii2-slider-pro/v/unstable)](https://packagist.org/packages/edofre/yii2-slider-pro)
+[![License](https://poser.pugx.org/edofre/yii2-slider-pro/license)](https://packagist.org/packages/edofre/yii2-slider-pro)
+[![composer.lock](https://poser.pugx.org/edofre/yii2-slider-pro/composerlock)](https://packagist.org/packages/edofre/yii2-slider-pro)
+
 ## Installation
 
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
