@@ -3,8 +3,8 @@
   "description": "Yii2 widget for slider-pro",
   "require": {
     "php": ">=5.5.0",
-    "yiisoft/yii2": "2.0.10",
-    "yiisoft/yii2-jui": "2.0.6",
+    "yiisoft/yii2": ">=2.0.9",
+    "yiisoft/yii2-jui": ">=2.0.6",
     "yiisoft/yii2-bootstrap": "~2.0.0",
     "bower-asset/slider-pro": "1.2.2"
   },
