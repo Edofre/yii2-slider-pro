@@ -1,6 +1,12 @@
 Change Log: `yii2-slider-pro`
 =============================
 
+## Version 1.1.6
+
+**Date:** 31-Mar-2017
+
+- Loosen composer requirements 
+
 ## Version 1.1.5
 
 **Date:** 29-Dec-2016
