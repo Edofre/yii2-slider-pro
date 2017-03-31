@@ -13,13 +13,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 To install, either run
 
 ```
-$ php composer.phar require edofre/yii2-slider-pro "V1.1.5"
+$ php composer.phar require edofre/yii2-slider-pro "V1.1.6"
 ```
 
 or add
 
 ```
-"edofre/yii2-slider-pro": "V1.1.5"
+"edofre/yii2-slider-pro": "V1.1.6"
 ```
 
 to the ```require``` section of your `composer.json` file.
